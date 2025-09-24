@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Question13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        // 입력 받기
         System.out.print("첫 번째 숫자: ");
         int n1 = sc.nextInt();
         System.out.print("첫 번째 연산자(+,-,*,/): ");
@@ -18,9 +16,8 @@ public class Question13 {
         System.out.print("세 번째 숫자: ");
         int n3 = sc.nextInt();
 
-        double result = 0;  // 결과값
+        double result = 0;
 
-        // 1. op1이 *, / 인 경우 먼저 처리
         switch (op1) {
             case '*':
                 double firstMul = n1 * n2;
@@ -42,7 +39,6 @@ public class Question13 {
                 }
                 break;
 
-            // 2. op1이 +, - 인 경우 → op2가 * 또는 /라면 그걸 먼저 계산
             default:
                 double mid = 0;
                 switch (op2) {
