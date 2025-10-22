@@ -186,7 +186,7 @@ class AdvancedMachine {
 
     // 사용자로부터 음료를 선택받고 구매 가능 여부 확인
     public void selectDrink() {
-        System.out.print("🥤 원하시는 음료의 번호를 선택하세요 (0: 취소): ");
+        System.out.print("원하시는 음료의 번호를 선택하세요 (0: 취소): ");
         int choice = scanner.nextInt();
 
         if (choice == 0) {
