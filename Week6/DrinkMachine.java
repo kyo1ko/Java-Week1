@@ -202,7 +202,7 @@ class AdvancedMachine {
                 long daysLeft = java.time.temporal.ChronoUnit.DAYS.between(today, d.expiry);
                 String warning = "";
                 if (daysLeft <= 0) warning = " (만료)";
-                else if (daysLeft <= 7) warning = " ⚠(7일 이하 임박)";
+                else if (daysLeft <= 7) warning = " (7일 이하 임박)";
                 else if (daysLeft <= 30) warning = " (30일 이내)";
                 System.out.println("  " + index + ". " + d.expiry + " (" + daysLeft + "일 남음)" + warning);
                 index++;
