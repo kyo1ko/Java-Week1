@@ -50,7 +50,7 @@ class Car {
             System.out.println(maker + " " + model + "의 에어컨을 바로 켭니다.");
         } else {
             if (!isEngineOn) {
-                startEnginㅌe();  // 시동이 꺼져 있으면 먼저 시동을 켜고
+                startEngine();  // 시동이 꺼져 있으면 먼저 시동을 켜고
             }
             System.out.println(maker + " " + model + "의 에어컨을 켭니다.");
         }

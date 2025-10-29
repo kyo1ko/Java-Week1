@@ -49,5 +49,38 @@ public class ArrayListExample {
 //        Collections.sort(list, Collections.reverseOrder()); // 내림차순 정렬
         list.sort(Collections.reverseOrder()); // 내림차순 정렬
         System.out.println("Sorted list (Descending): " + list);
+
+        // 서플
+        Collections.shuffle(list);
+        System.out.println("Sorted list (Ascending): " + list);
+
+        // 리스트 복사
+        ArrayList<String> copiedList = new ArrayList<>(list);
+        System.out.println("Copied list: " + copiedList);
+
+        // 리스트 클리어
+        copiedList.clear(); // 모든 요소 제거
+        System.out.println("Cleared copied list: " + copiedList);
+
+        // 반복문을 통한 출력
+        System.out.println("List iteration using for-each:");
+        for (String fruit : list) {
+            System.out.println(fruit);
+        }
+
+        System.out.println("List iteration using for loop:");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("Index " + i + ": " + list.get(i));
+        }
+
+        // 리스트를 배열로 변환
+        String[] array = list.toArray(new String[0]);
+        System.out.println("Converted to array: ");
+        for (String element : array) {
+            System.out.println(element);
+        }
+
+        // 리스트가 비어 있는지 확인
+        System.out.println("Is the list empty? " + list.isEmpty());
     }
 }
